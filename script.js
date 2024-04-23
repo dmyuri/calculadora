@@ -22,6 +22,11 @@ function calculate() {
             return;
         }
 
+        if (screen.value[0] === '0' && screen.value[1] !== '.') {
+            screen.value = 'Conta Inválida';
+            return;
+        }
+
         if (!isFinite(result)) {
             screen.value = 0;
             return;
